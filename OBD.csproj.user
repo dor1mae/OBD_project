@@ -7,7 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="WorkPages\DirectoryPages\DirCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirectoryOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirectoryOptions.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
