@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\Projects\Created\OBD_project\App.xaml
-11-1940582096
+21361045465
 
-301529032469
+42-1896743717
 215-968178229
-MainWindow.xaml;WorkPages\DirectoryPages\DirCreate.xaml;WorkPages\DirectoryPages\DirDelete.xaml;WorkPages\DirectoryPages\DirectoryOptions.xaml;WorkPages\DirectoryPages\DirGet.xaml;WorkPages\DirectoryPages\DirUpdate.xaml;WorkPages\HallPages\HallCreate.xaml;WorkPages\HallPages\HallGet.xaml;WorkPages\HallPages\HallOptions.xaml;WorkPages\HallPages\HallsDelete.xaml;WorkPages\HallPages\HallUpdate.xaml;
+MainWindow.xaml;WorkPages\DirectoryPages\DirCreate.xaml;WorkPages\DirectoryPages\DirDelete.xaml;WorkPages\DirectoryPages\DirectoryOptions.xaml;WorkPages\DirectoryPages\DirGet.xaml;WorkPages\DirectoryPages\DirUpdate.xaml;WorkPages\ExhibitionPages\ExhibitionCreate.xaml;WorkPages\ExhibitionPages\ExhibitionDelete.xaml;WorkPages\ExhibitionPages\ExhibitionGet.xaml;WorkPages\ExhibitionPages\ExhibitionUpdate.xaml;WorkPages\ExhibitionPages\ExOptions.xaml;WorkPages\HallPages\HallCreate.xaml;WorkPages\HallPages\HallGet.xaml;WorkPages\HallPages\HallOptions.xaml;WorkPages\HallPages\HallsDelete.xaml;WorkPages\HallPages\HallUpdate.xaml;WorkPages\OrganizatorPages\OrganizatorCreate.xaml;WorkPages\OrganizatorPages\OrganizatorDelete.xaml;WorkPages\OrganizatorPages\OrganizatorGet.xaml;WorkPages\OrganizatorPages\OrganizatorUpdate.xaml;WorkPages\OrganizatorPages\OrgOptions.xaml;
 
 True
 

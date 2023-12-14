@@ -18,6 +18,8 @@ using Npgsql;
 using System.Data.Odbc;
 using OBD.WorkPages.DirectoryPages;
 using OBD.WorkPages.HallPages;
+using OBD.WorkPages.ExhibitionPages;
+using OBD.WorkPages.OrganizatorPages;
 
 namespace OBD
 {
@@ -50,6 +52,22 @@ namespace OBD
         private void Hall_Click(object sender, RoutedEventArgs e)
         {
             HallOptions hall = new HallOptions(mainFrame);
+            hall.Owner = this;
+
+            hall.Show();
+        }
+
+        private void Exhibition_Click(object sender, RoutedEventArgs e)
+        {
+            ExOptions hall = new ExOptions(mainFrame);
+            hall.Owner = this;
+
+            hall.Show();
+        }
+
+        private void Organizator_Click(object sender, RoutedEventArgs e)
+        {
+            OrgOptions hall = new OrgOptions(mainFrame);
             hall.Owner = this;
 
             hall.Show();

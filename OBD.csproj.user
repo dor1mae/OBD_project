@@ -22,6 +22,21 @@
     <Compile Update="WorkPages\DirectoryPages\DirUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExhibitionCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExhibitionDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExhibitionGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExhibitionUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\HallPages\HallCreate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +50,21 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WorkPages\HallPages\HallUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrganizatorCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrganizatorDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrganizatorGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrganizatorUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrgOptions.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -57,6 +87,21 @@
     <Page Update="WorkPages\DirectoryPages\DirUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExhibitionCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExhibitionDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExhibitionGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExhibitionUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="WorkPages\HallPages\HallCreate.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -70,6 +115,21 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\HallPages\HallUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrganizatorCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrganizatorDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrganizatorGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrganizatorUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrgOptions.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
