@@ -17,6 +17,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Npgsql;
 using System.Data.Odbc;
 using OBD.WorkPages.DirectoryPages;
+using OBD.WorkPages.HallPages;
 
 namespace OBD
 {
@@ -44,6 +45,14 @@ namespace OBD
             directory.Owner = this;
 
             directory.Show();
+        }
+
+        private void Hall_Click(object sender, RoutedEventArgs e)
+        {
+            HallOptions hall = new HallOptions(mainFrame);
+            hall.Owner = this;
+
+            hall.Show();
         }
     }
 }

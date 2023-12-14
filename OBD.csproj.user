@@ -10,7 +10,31 @@
     <Compile Update="WorkPages\DirectoryPages\DirCreate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\DirectoryPages\DirectoryOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallsDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,7 +45,31 @@
     <Page Update="WorkPages\DirectoryPages\DirCreate.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="WorkPages\DirectoryPages\DirDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="WorkPages\DirectoryPages\DirectoryOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallsDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

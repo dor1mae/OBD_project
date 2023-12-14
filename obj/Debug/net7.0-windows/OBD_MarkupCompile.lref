@@ -3,4 +3,12 @@
 FD:\Projects\Created\OBD_project\MainWindow.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\DirectoryPages\DirectoryOptions.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\DirectoryPages\DirCreate.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\DirectoryPages\DirUpdate.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\DirectoryPages\DirDelete.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\DirectoryPages\DirGet.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\HallPages\HallCreate.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\HallPages\HallOptions.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\HallPages\HallUpdate.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\HallPages\HallsDelete.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\HallPages\HallGet.xaml;;
 

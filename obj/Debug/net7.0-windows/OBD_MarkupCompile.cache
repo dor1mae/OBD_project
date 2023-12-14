@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\Projects\Created\OBD_project\App.xaml
-3104654938
+11-1940582096
 
-191441614728
+28-353321141
 215-968178229
-MainWindow.xaml;WorkPages\DirectoryPages\DirCreate.xaml;WorkPages\DirectoryPages\DirectoryOptions.xaml;
+MainWindow.xaml;WorkPages\DirectoryPages\DirCreate.xaml;WorkPages\DirectoryPages\DirDelete.xaml;WorkPages\DirectoryPages\DirectoryOptions.xaml;WorkPages\DirectoryPages\DirGet.xaml;WorkPages\DirectoryPages\DirUpdate.xaml;WorkPages\HallPages\HallCreate.xaml;WorkPages\HallPages\HallGet.xaml;WorkPages\HallPages\HallOptions.xaml;WorkPages\HallPages\HallsDelete.xaml;WorkPages\HallPages\HallUpdate.xaml;
 
 False
 

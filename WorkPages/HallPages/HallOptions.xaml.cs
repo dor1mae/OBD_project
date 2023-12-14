@@ -12,15 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace OBD.WorkPages.DirectoryPages
+namespace OBD.WorkPages.HallPages
 {
     /// <summary>
-    /// Логика взаимодействия для DirectoryOptions.xaml
+    /// Логика взаимодействия для HallOptions.xaml
     /// </summary>
-    public partial class DirectoryOptions : Window
+    public partial class HallOptions : Window
     {
         Frame frame;
-        public DirectoryOptions(Frame frame)
+        public HallOptions(Frame frame)
         {
             InitializeComponent();
             this.frame = frame;
@@ -28,25 +28,25 @@ namespace OBD.WorkPages.DirectoryPages
 
         private void Create_Click(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(new Uri("WorkPages/DirectoryPages/DirCreate.xaml", UriKind.Relative));
+            frame.Navigate(new Uri("WorkPages/HallPages/HallCreate.xaml", UriKind.Relative));
             this.Close();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(new Uri("WorkPages/DirectoryPages/DirUpdate.xaml", UriKind.Relative));
+            frame.Navigate(new Uri("WorkPages/HallPages/HallUpdate.xaml", UriKind.Relative));
             this.Close();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(new Uri("WorkPages/DirectoryPages/DirDelete.xaml", UriKind.Relative));
+            frame.Navigate(new Uri("WorkPages/HallPages/HallsDelete.xaml", UriKind.Relative));
             this.Close();
         }
 
         private void List_Click(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(new Uri("WorkPages/DirectoryPages/DirGet.xaml", UriKind.Relative));
+            frame.Navigate(new Uri("WorkPages/HallPages/HallGet.xaml", UriKind.Relative));
             this.Close();
         }
     }
