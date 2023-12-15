@@ -19,9 +19,35 @@ namespace OBD.WorkPages.SettlerPages
     /// </summary>
     public partial class SettlerOptions : Window
     {
-        public SettlerOptions()
+        Frame frame;
+        public SettlerOptions(Frame frame)
         {
             InitializeComponent();
+            this.frame = frame;
+        }
+
+        private void Create_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("WorkPages/SettlerPages/SettlerCreate.xaml", UriKind.Relative));
+            this.Close();
+        }
+
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("WorkPages/SettlerPages/SettlerUpdate.xaml", UriKind.Relative));
+            this.Close();
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("WorkPages/SettlerPages/SettlerDelete.xaml", UriKind.Relative));
+            this.Close();
+        }
+
+        private void List_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("WorkPages/SettlerPages/SettlerGet.xaml", UriKind.Relative));
+            this.Close();
         }
     }
 }

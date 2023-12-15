@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OBD.WorkPages.SettlerPages"
         mc:Ignorable="d"
-        Title="SettlerOptions" Height="450" Width="800">
+        Title="SettlerOptions" Height="300" Width="450">
     <Grid>
-        
+        <Label Content="Что вы хотите сделать?" HorizontalAlignment="Center" VerticalAlignment="Top" Width="354" Height="47" Background="#FFA5E8AE" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Yu Gothic UI Semibold" Margin="0,5,0,0"/>
+        <Button x:Name="Create" Content="Создать" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" Height="46" Width="354" Padding="1,1,1,5" Click="Create_Click" Background="#FFA5E8AE" FontFamily="Yu Gothic UI Semibold"/>
+        <Button x:Name="Update" Content="Редактировать" HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="354" Padding="1,1,1,2" Background="#FFA5E8AE" FontFamily="Yu Gothic UI Semibold" Click="Update_Click" Margin="0,118,0,0"/>
+        <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="354" Margin="0,172,0,0" Padding="1,1,1,2" Background="#FFA5E8AE" FontFamily="Yu Gothic UI Semibold" Click="Delete_Click"/>
+        <Button x:Name="List" Content="Отобразить таблицу" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top" Height="45" Width="354" Padding="1,1,1,2" Background="#FFA5E8AE" FontFamily="Yu Gothic UI Semibold" Click="List_Click"/>
+
     </Grid>
 </Window>

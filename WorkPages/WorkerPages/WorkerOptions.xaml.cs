@@ -19,9 +19,35 @@ namespace OBD.WorkPages.WorkerPages
     /// </summary>
     public partial class WorkerOptions : Window
     {
-        public WorkerOptions()
+        Frame frame;
+        public WorkerOptions(Frame frame)
         {
             InitializeComponent();
+            this.frame = frame;
+        }
+
+        private void Create_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("WorkPages/WorkerPages/WorkerCreate.xaml", UriKind.Relative));
+            this.Close();
+        }
+
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("WorkPages/WorkerPages/WorkerUpdate.xaml", UriKind.Relative));
+            this.Close();
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("WorkPages/WorkerPages/WorkerDelete.xaml", UriKind.Relative));
+            this.Close();
+        }
+
+        private void List_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("WorkPages/WorkerPages/WorkerGet.xaml", UriKind.Relative));
+            this.Close();
         }
     }
 }

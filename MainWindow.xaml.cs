@@ -22,6 +22,8 @@ using OBD.WorkPages.ExhibitionPages;
 using OBD.WorkPages.OrganizatorPages;
 using OBD.WorkPages.TicketPages;
 using OBD.WorkPages.ProfessionPages;
+using OBD.WorkPages.SettlerPages;
+using OBD.WorkPages.WorkerPages;
 
 namespace OBD
 {
@@ -77,7 +79,10 @@ namespace OBD
 
         private void Settler_Click(object sender, RoutedEventArgs e)
         {
+            SettlerOptions hall = new SettlerOptions(mainFrame);
+            hall.Owner = this;
 
+            hall.Show();
         }
 
         private void Ticket_Click(object sender, RoutedEventArgs e)
@@ -98,7 +103,10 @@ namespace OBD
 
         private void Worker_Click(object sender, RoutedEventArgs e)
         {
+            WorkerOptions hall = new WorkerOptions(mainFrame);
+            hall.Owner = this;
 
+            hall.Show();
         }
     }
 }
