@@ -58,7 +58,7 @@ namespace OBD.WorkPages.ExhibitionPages
                     }
                     catch
                     {
-                        MessageBox.Show("Невозможно удалить\n От данной записи зала зависят записи в других таблицах!");
+                        MessageBox.Show("Невозможно удалить\n От данной записи выставки зависят записи в других таблицах!");
                     }
                 }
                 else

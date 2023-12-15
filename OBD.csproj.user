@@ -67,6 +67,45 @@
     <Compile Update="WorkPages\OrganizatorPages\OrgOptions.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfessionCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfessionDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfessionGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfessionUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -130,6 +169,45 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\OrganizatorPages\OrgOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfessionCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfessionDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfessionGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfessionUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerOptions.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

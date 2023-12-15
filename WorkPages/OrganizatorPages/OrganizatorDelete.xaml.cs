@@ -59,7 +59,7 @@ namespace OBD.WorkPages.OrganizatorPages
                     }
                     catch
                     {
-                        MessageBox.Show("Невозможно удалить\n От данной записи зала зависят записи в других таблицах!");
+                        MessageBox.Show("Невозможно удалить\n От данной записи организатора зависят записи в других таблицах!");
                     }
                 }
                 else

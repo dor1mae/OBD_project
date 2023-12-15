@@ -1,0 +1,19 @@
+﻿<Page x:Class="OBD.WorkPages.ProfessionPages.ProfessionCreate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OBD.WorkPages.ProfessionPages"
+      mc:Ignorable="d"
+      Title="ProfessionCreate" Height="450" Width="650">
+
+    <Grid Background="White">
+        <Label Content="Создание Должности" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="265" Height="65" RenderTransformOrigin="0.672,0.534" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
+        <TextBox x:Name="title" HorizontalAlignment="Left" Margin="385,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="36" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="Время работы" HorizontalAlignment="Left" Margin="60,111,0,0" VerticalAlignment="Top" Width="206" Height="36" HorizontalContentAlignment="Left" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="Название" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Height="36" HorizontalContentAlignment="Left" Margin="60,70,0,0" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <TextBox x:Name="worktime" HorizontalAlignment="Left" Margin="385,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="36" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Button x:Name="Create" Content="Создать" HorizontalAlignment="Left" Margin="385,396,0,0" VerticalAlignment="Top" Height="44" Width="205" FontSize="20" FontFamily="Yu Gothic UI Semibold" Click="Create_Click"/>
+
+    </Grid>
+</Page>

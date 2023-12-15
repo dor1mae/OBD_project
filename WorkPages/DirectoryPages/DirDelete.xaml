@@ -8,7 +8,7 @@
       Title="DirDelete" Height="450" Width="650">
 
     <Grid Background="White">
-        <Label Content="Удаление Словаря" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="304" Height="65" RenderTransformOrigin="0.672,0.534" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
+        <Label Content="Удаление экспоната" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="304" Height="65" RenderTransformOrigin="0.672,0.534" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
         <TextBox x:Name="idDir" HorizontalAlignment="Left" Margin="386,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="28" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
         <Label Content="Id словаря" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Height="28" HorizontalContentAlignment="Left" Margin="60,70,0,0" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
         <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Left" Margin="386,102,0,0" VerticalAlignment="Top" Width="204" Height="28" Click="Delete_Click"/>

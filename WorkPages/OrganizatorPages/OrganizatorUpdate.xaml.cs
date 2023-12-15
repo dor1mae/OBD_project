@@ -80,7 +80,7 @@ namespace OBD.WorkPages.OrganizatorPages
         {
             int id_Dir = t.idTest(idDir.Text);
 
-            if (db.Organizators.Find(id_Dir) == null)
+            if (db.Directories.Find(id_Dir) == null)
             {
                 MessageBox.Show("Такого словаря нет");
                 return;

@@ -1,0 +1,17 @@
+﻿<Page x:Class="OBD.WorkPages.ProfessionPages.ProfessionDelete"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OBD.WorkPages.ProfessionPages"
+      mc:Ignorable="d"
+      Title="ProfessionDelete" Height="450" Width="650" Background="Black">
+
+    <Grid Background="White">
+        <Label Content="Удаление Должности" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="304" Height="65" RenderTransformOrigin="0.672,0.534" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
+        <TextBox x:Name="idP" HorizontalAlignment="Left" Margin="386,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="28" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="Id должности" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Height="28" HorizontalContentAlignment="Left" Margin="60,70,0,0" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Left" Margin="386,102,0,0" VerticalAlignment="Top" Width="204" Height="28" Click="Delete_Click"/>
+
+    </Grid>
+</Page>

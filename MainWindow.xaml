@@ -18,10 +18,14 @@
             </Grid.RowDefinitions>
             <ScrollViewer Grid.RowSpan="2" UseLayoutRounding="False" Margin="0,0,-14,-10">
                 <StackPanel Height="485" Width="238" CanVerticallyScroll="True">
-                    <Button x:Name="Directory" Content="Таблица Словарей" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" Margin="0,0,0,5" Click="Directory_Click"/>
+                    <Button x:Name="Directory" Content="Таблица Экспонатов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" Margin="0,0,0,5" Click="Directory_Click"/>
                     <Button x:Name="Hall" Content="Таблица Залов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Hall_Click" Margin="0,0,0,5"/>
                     <Button x:Name="Exhibition" Content="Таблица Выставок" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Exhibition_Click" Margin="0,0,0,5"/>
-                    <Button x:Name="Organizator" Content="Таблица Организаторов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Organizator_Click"/>
+                    <Button x:Name="Organizator" Content="Таблица Организаторов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Organizator_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Settler" Content="Таблица посетителей" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Settler_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Ticket" Content="Таблица билетов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Ticket_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Profession" Content="Таблица должностей" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Profession_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Worker" Content="Таблица работников" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Worker_Click"/>
                 </StackPanel>
             </ScrollViewer>
         </Grid>

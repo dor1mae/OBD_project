@@ -12,7 +12,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Создание Словаря" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="265" Height="65" RenderTransformOrigin="0.672,0.534" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
+        <Label Content="Создание экспоната" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="265" Height="65" RenderTransformOrigin="0.672,0.534" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
         <TextBox x:Name="title" HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Grid.Column="1" Height="36" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
         <Label Content="Описание" HorizontalAlignment="Center" Margin="0,114,0,0" VerticalAlignment="Top" Width="206" Height="36" HorizontalContentAlignment="Left" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
         <Label Content="ID Зала" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Width="206" Height="36" HorizontalContentAlignment="Left" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>

@@ -20,6 +20,8 @@ using OBD.WorkPages.DirectoryPages;
 using OBD.WorkPages.HallPages;
 using OBD.WorkPages.ExhibitionPages;
 using OBD.WorkPages.OrganizatorPages;
+using OBD.WorkPages.TicketPages;
+using OBD.WorkPages.ProfessionPages;
 
 namespace OBD
 {
@@ -28,7 +30,7 @@ namespace OBD
     /// </summary>
     public partial class MainWindow : Window
     {
-        OdbContext dbContext = new OdbContext();
+        OdbContext db = new OdbContext();
         public MainWindow()
         {
             InitializeComponent();
@@ -37,8 +39,8 @@ namespace OBD
         private void Create_Click(object sender, RoutedEventArgs e)
         {
             Directory test = new Directory { Title = "Сая", Descrip = "Описание для фигурки Саи", Height = 10, Length = 5, Weigth = 1, Width = 5};
-            dbContext.Directories.Add(test);
-            dbContext.SaveChanges();
+            db.Directories.Add(test);
+            db.SaveChanges();
         }
 
         private void Directory_Click(object sender, RoutedEventArgs e)
@@ -71,6 +73,32 @@ namespace OBD
             hall.Owner = this;
 
             hall.Show();
+        }
+
+        private void Settler_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Ticket_Click(object sender, RoutedEventArgs e)
+        {
+            TicketOptions hall = new TicketOptions(mainFrame);
+            hall.Owner = this;
+
+            hall.Show();
+        }
+
+        private void Profession_Click(object sender, RoutedEventArgs e)
+        {
+            ProfOptions hall = new ProfOptions(mainFrame);
+            hall.Owner = this;
+
+            hall.Show();
+        }
+
+        private void Worker_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
