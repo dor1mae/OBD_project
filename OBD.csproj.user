@@ -85,7 +85,16 @@
     <Compile Update="WorkPages\SettlerPages\SettlerCreate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\SettlerPages\SettlerOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WorkPages\TicketPages\TicketCreate.xaml.cs">
@@ -103,7 +112,19 @@
     <Compile Update="WorkPages\TicketPages\TicketUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\WorkerPages\WorkerOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -189,7 +210,16 @@
     <Page Update="WorkPages\SettlerPages\SettlerCreate.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="WorkPages\SettlerPages\SettlerOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\TicketPages\TicketCreate.xaml">
@@ -207,7 +237,19 @@
     <Page Update="WorkPages\TicketPages\TicketUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="WorkPages\WorkerPages\WorkerOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

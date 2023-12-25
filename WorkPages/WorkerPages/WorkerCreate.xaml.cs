@@ -1,4 +1,4 @@
-﻿using OBD.WorkPages.SettlerPages;
+﻿using OBD.WorkPages.WorkerPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,24 +14,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace OBD.WorkPages.SettlerPages
+namespace OBD.WorkPages.WorkerPages
 {
     /// <summary>
-    /// Логика взаимодействия для SettlerCreate.xaml
+    /// Логика взаимодействия для WorkerCreate.xaml
     /// </summary>
-    public partial class SettlerCreate : Page
+    public partial class WorkerCreate : Page
     {
         OdbContext db = new OdbContext();
-        SettlerTest t = new SettlerTest();
+        WorkerTest t = new WorkerTest();
 
-        public SettlerCreate()
+        public WorkerCreate()
         {
             InitializeComponent();
         }
 
         private void Create_Click(object sender, RoutedEventArgs e)
         {
-            if (idTicket.Text == "")
+            if (idProf.Text == "")
             {
                 Create_WithoutId();
             }
@@ -43,21 +43,21 @@ namespace OBD.WorkPages.SettlerPages
 
         public void Create_WithId()
         {
-            int id_ticket = t.idTest(this.idTicket.Text);
+            int id_pr = t.idTest(this.idProf.Text);
 
-            if (db.Tickets.Find(id_ticket) == null)
+            if (db.Professions.Find(id_pr) == null)
             {
-                MessageBox.Show("Такого билета нет");
+                MessageBox.Show("Такой должности нет");
                 return;
             }
 
-            DateTime newbirth = t.StringToDateTime(dateBirth.Text);
+            int salary = t.idTest(salaryBox.Text);
 
             if (t.f)
             {
-                Settler temp = new Settler { FirstName = firstName.Text, SecondName = secondName.Text, FatherName = fatherName.Text, Email = email.Text, Birth = newbirth, IdTicket = id_ticket, Phone = phone.Text };
+                Employee temp = new Employee { FirstName = firstName.Text, SecondName = secondName.Text, FatherName = fatherName.Text, Salary = salary, IdProf = id_pr };
 
-                db.Settlers.AddAsync(temp);
+                db.Employees.AddAsync(temp);
                 db.SaveChanges();
 
                 MessageBox.Show("Успешно сохранено!");
@@ -70,13 +70,13 @@ namespace OBD.WorkPages.SettlerPages
 
         public void Create_WithoutId()
         {
-            DateTime newbirth = t.StringToDateTime(dateBirth.Text);
+            int salary = t.idTest(salaryBox.Text);
 
-            if (t.f) 
+            if (t.f)
             {
-                Settler temp = new Settler { FirstName = firstName.Text, SecondName = secondName.Text, FatherName = fatherName.Text, Email = email.Text, Birth = newbirth, Phone = phone.Text };
+                Employee temp = new Employee { FirstName = firstName.Text, SecondName = secondName.Text, FatherName = fatherName.Text, Salary = salary };
 
-                db.Settlers.AddAsync(temp);
+                db.Employees.AddAsync(temp);
                 db.SaveChanges();
 
                 MessageBox.Show("Успешно сохранено!");
