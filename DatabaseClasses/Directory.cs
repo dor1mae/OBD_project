@@ -21,7 +21,7 @@ public partial class Directory
 
     public int Weigth { get; set; }
 
-    public virtual Hall? IdHallNavigation { get; set; }
+    public Hall? IdHallNavigation { get; set; }
 
-    public virtual Organizator? Organizator { get; set; }
+    public Organizator? Organizator { get; set; }
 }

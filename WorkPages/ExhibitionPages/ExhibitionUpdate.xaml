@@ -1,0 +1,29 @@
+﻿<Page x:Class="OBD.WorkPages.ExhibitionPages.ExhibitionUpdate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OBD.WorkPages.ExhibitionPages"
+      mc:Ignorable="d"
+      Title="ExhibitionUpdate" Height="450" Width="650">
+
+    <Grid Background="White">
+        <Label Content="Редактирование Выставки" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="326" Height="65" RenderTransformOrigin="0.672,0.534" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
+        <TextBox x:Name="idEx" HorizontalAlignment="Left" Margin="386,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="28" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="Id выставки" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Height="28" HorizontalContentAlignment="Left" Margin="60,70,0,0" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Button x:Name="Search" Content="Найти" HorizontalAlignment="Left" Margin="386,102,0,0" VerticalAlignment="Top" Width="204" Height="28" Click="Search_Click"/>
+        <TextBox x:Name="title" HorizontalAlignment="Left" Margin="385,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="34" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label x:Name="Date_start" Content="Дата начала" HorizontalAlignment="Left" Margin="60,189,0,0" VerticalAlignment="Top" Width="206" Height="34" HorizontalContentAlignment="Left" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="Дата конца" HorizontalAlignment="Left" Margin="60,231,0,0" VerticalAlignment="Top" Width="206" Height="33" HorizontalContentAlignment="Left" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="Название" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Height="34" HorizontalContentAlignment="Left" Margin="60,151,0,0" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="Число билетов" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Height="32" Margin="60,300,0,0" HorizontalContentAlignment="Left" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="Id Организатора" HorizontalAlignment="Left" Margin="60,340,0,0" VerticalAlignment="Top" Width="206" Height="35" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <TextBox x:Name="dateStart" HorizontalAlignment="Left" Margin="385,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="34" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <TextBox x:Name="dateFinish" HorizontalAlignment="Left" Margin="385,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="33" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <TextBox x:Name="numberTickets" HorizontalAlignment="Left" Margin="385,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="32" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <TextBox x:Name="idOrg" HorizontalAlignment="Left" Margin="385,342,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="33" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Label Content="* Дата записывается в формате &quot;{Год}:{Месяц}:{День}&quot;" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" Width="530" FontFamily="Yu Gothic UI Semilight" FontSize="10" Height="22"/>
+        <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="386,404,0,0" VerticalAlignment="Top" Width="204" Height="36" Click="Save_Click"/>
+
+    </Grid>
+</Page>

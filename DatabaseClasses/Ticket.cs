@@ -13,6 +13,8 @@ public partial class Ticket
 
     public int? IdExhibition { get; set; }
 
+    public int? IdSettler { get; set; }
+
     public virtual Exhibition? IdExhibitionNavigation { get; set; }
 
     public virtual Settler? Settler { get; set; }

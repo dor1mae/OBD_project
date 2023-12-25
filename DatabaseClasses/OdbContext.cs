@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using OBD.DatabaseClasses;
 
 namespace OBD;
 
@@ -35,11 +36,17 @@ public partial class OdbContext : DbContext
 
     public virtual DbSet<Settler> Settlers { get; set; }
 
+    public virtual DbSet<User> Users {  get; set; } 
+
     public virtual DbSet<Ticket> Tickets { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#pragma warning disable CS1030 // Директива #warning
+#pragma warning disable CS1030 // Директива #warning
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=ODB;Username=dorimae;Password=12345");
+#pragma warning restore CS1030 // Директива #warning
+#pragma warning restore CS1030 // Директива #warning
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -133,6 +140,28 @@ public partial class OdbContext : DbContext
             entity.HasOne(d => d.IdOrgNavigation).WithOne(p => p.Exhibit)
                 .HasForeignKey<Exhibit>(d => d.IdOrg)
                 .HasConstraintName("exhibits_id_org_fkey");
+        });
+
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("users_pkey");
+            
+            entity.ToTable("users");
+            
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.IdSettler).HasColumnName("idsettler");
+
+            entity.Property(e => e.Username)
+            .HasColumnType("character varying")
+            .HasColumnName("username");
+            
+            entity.Property(e => e.Password)
+            .HasColumnType("character varying")
+            .HasColumnName("passqord");
+
+            entity.Property(e => e.IsAdmin)
+            .HasColumnType("boolean")
+            .HasColumnName("isadmin");
         });
 
         modelBuilder.Entity<Exhibition>(entity =>
@@ -293,6 +322,7 @@ public partial class OdbContext : DbContext
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("day");
             entity.Property(e => e.IdExhibition).HasColumnName("id_exhibition");
+            entity.Property(e => e.IdSettler).HasColumnName("id_settler");
 
             entity.HasOne(d => d.IdExhibitionNavigation).WithOne(p => p.Ticket)
                 .HasForeignKey<Ticket>(d => d.IdExhibition)

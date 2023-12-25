@@ -7,7 +7,282 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Auth.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Reg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirectoryOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\DirectoryPages\DirUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExhibitionCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExhibitionDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExhibitionGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExhibitionUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ExhibitionPages\ExOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallsDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\HallPages\HallUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrganizatorCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrganizatorDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrganizatorGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrganizatorUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\OrganizatorPages\OrgOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfessionCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfessionDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfessionGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfessionUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\ProfessionPages\ProfOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\SettlerPages\SettlerUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\TicketPages\TicketUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\UserPages\buyTicket.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\UserPages\deleteTicket.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\UserPages\WatchProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerGet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\WorkerUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Auth.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindowUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Reg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirectoryOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\DirUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExhibitionCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExhibitionDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExhibitionGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExhibitionUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ExhibitionPages\ExOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallsDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\HallPages\HallUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrganizatorCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrganizatorDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrganizatorGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrganizatorUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\OrganizatorPages\OrgOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfessionCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfessionDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfessionGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfessionUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\ProfessionPages\ProfOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\SettlerPages\SettlerUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\TicketPages\TicketUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\UserPages\buyTicket.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\UserPages\deleteTicket.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\UserPages\WatchProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerGet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\WorkerUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

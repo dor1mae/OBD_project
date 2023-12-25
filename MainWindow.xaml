@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OBD"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="584" Width="990" MinWidth="990" MinHeight="584" MaxHeight="584" MaxWidth="990">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="125*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="10,10,715,10" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ScrollViewer Grid.RowSpan="2" UseLayoutRounding="False" Margin="0,0,-14,-10">
+                <StackPanel Height="485" Width="238" CanVerticallyScroll="True">
+                    <Button x:Name="Directory" Content="Таблица Экспонатов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" Margin="0,0,0,5" Click="Directory_Click"/>
+                    <Button x:Name="Hall" Content="Таблица Залов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Hall_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Exhibition" Content="Таблица Выставок" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Exhibition_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Organizator" Content="Таблица Организаторов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Organizator_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Settler" Content="Таблица посетителей" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Settler_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Ticket" Content="Таблица билетов" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Ticket_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Profession" Content="Таблица должностей" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Profession_Click" Margin="0,0,0,5"/>
+                    <Button x:Name="Worker" Content="Таблица работников" Background="#FFA5E8AE" HorizontalContentAlignment="Left" Padding="10,1,1,1" Grid.IsSharedSizeScope="True" FontFamily="Yu Gothic UI Semibold" Height="28" Width="224" IsDefault="True" Click="Worker_Click"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Grid Margin="0,0,0,10">
+            <Label Content="База Музея: Админ" HorizontalAlignment="Left" Margin="32,0,0,0" Width="221" FontSize="16" VerticalContentAlignment="Center" Background="#FFA5E8AE" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Padding="10,5,5,5" Height="38" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="Work_Drid" Grid.Row="1" Margin="290,10,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="116*"/>
+                <RowDefinition Height="235*"/>
+            </Grid.RowDefinitions>
+            <Frame x:Name="mainFrame" Content="" NavigationUIVisibility="Hidden" Grid.RowSpan="2" Margin="10,0,10,10"/>
 
+        </Grid>
+        <GridSplitter Margin="275,63,0,0" Background="#FF82BB89" Grid.RowSpan="2" HorizontalAlignment="Left" Width="10"/>
+        <GridSplitter HorizontalAlignment="Stretch" Height="10" Margin="0,58,0,0" VerticalAlignment="Top" Background="#FF82BB89"/>
     </Grid>
 </Window>
