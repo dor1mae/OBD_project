@@ -1,6 +1,9 @@
 ﻿
 
+FD:\Projects\Created\OBD_project\Auth.xaml;;
 FD:\Projects\Created\OBD_project\MainWindow.xaml;;
+FD:\Projects\Created\OBD_project\MainWindowUser.xaml;;
+FD:\Projects\Created\OBD_project\Reg.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\DirectoryPages\DirCreate.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\DirectoryPages\DirDelete.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\DirectoryPages\DirectoryOptions.xaml;;
@@ -27,18 +30,21 @@ FD:\Projects\Created\OBD_project\WorkPages\ProfessionPages\ProfessionGet.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\ProfessionPages\ProfessionUpdate.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\ProfessionPages\ProfOptions.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\SettlerPages\SettlerCreate.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\SettlerPages\SettlerDelete.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\SettlerPages\SettlerGet.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\SettlerPages\SettlerOptions.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\SettlerPages\SettlerUpdate.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\TicketPages\TicketCreate.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\TicketPages\TicketDelete.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\TicketPages\TicketGet.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\TicketPages\TicketOptions.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\TicketPages\TicketUpdate.xaml;;
-FD:\Projects\Created\OBD_project\WorkPages\WorkerPages\WorkerOptions.xaml;;
-FD:\Projects\Created\OBD_project\WorkPages\SettlerPages\SettlerUpdate.xaml;;
-FD:\Projects\Created\OBD_project\WorkPages\SettlerPages\SettlerDelete.xaml;;
-FD:\Projects\Created\OBD_project\WorkPages\SettlerPages\SettlerGet.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\WorkerPages\WorkerCreate.xaml;;
-FD:\Projects\Created\OBD_project\WorkPages\WorkerPages\WorkerUpdate.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\WorkerPages\WorkerDelete.xaml;;
 FD:\Projects\Created\OBD_project\WorkPages\WorkerPages\WorkerGet.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\WorkerPages\WorkerOptions.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\WorkerPages\WorkerUpdate.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\UserPages\WatchProfile.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\UserPages\buyTicket.xaml;;
+FD:\Projects\Created\OBD_project\WorkPages\UserPages\deleteTicket.xaml;;
 

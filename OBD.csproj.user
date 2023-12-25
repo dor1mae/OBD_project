@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Auth.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Reg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\DirectoryPages\DirCreate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -112,6 +118,15 @@
     <Compile Update="WorkPages\TicketPages\TicketUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\UserPages\buyTicket.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\UserPages\deleteTicket.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\UserPages\WatchProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\WorkerPages\WorkerCreate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -129,7 +144,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Auth.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindowUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Reg.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\DirectoryPages\DirCreate.xaml">
@@ -235,6 +259,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\TicketPages\TicketUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\UserPages\buyTicket.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\UserPages\deleteTicket.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\UserPages\WatchProfile.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\WorkerPages\WorkerCreate.xaml">

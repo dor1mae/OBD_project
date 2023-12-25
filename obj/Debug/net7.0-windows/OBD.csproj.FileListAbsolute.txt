@@ -126,3 +126,15 @@ D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\WorkerPages\W
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\WorkerPages\WorkerGet.g.cs
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\WorkerPages\WorkerDelete.baml
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\WorkerPages\WorkerGet.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\Auth.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\Reg.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\Auth.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\Reg.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\MainWindowUser.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\MainWindowUser.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\WatchProfile.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\WatchProfile.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\buyTicket.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\deleteTicket.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\buyTicket.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\deleteTicket.baml

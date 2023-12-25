@@ -1,0 +1,16 @@
+﻿<Window x:Class="OBD.WorkPages.UserPages.buyTicket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OBD.WorkPages.UserPages"
+        mc:Ignorable="d"
+        Title="buyTicket" Height="250" Width="450" MinWidth="450" MaxWidth="450" MinHeight="250" MaxHeight="250">
+    <Grid Margin="0,0,10,3">
+        <Label Content="Введите id выставки, &#xD;&#xA;к которой хотите купить билет" HorizontalAlignment="Left" Margin="22,81,0,0" VerticalAlignment="Top" Width="190" Height="52" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Yu Gothic UI Semibold"/>
+        <Label Content="Покупка билета" Margin="0,8,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Yu Gothic UI Semibold" FontSize="20" HorizontalAlignment="Center" Width="248" Height="68" VerticalAlignment="Top"/>
+        <TextBox x:Name="idEx" TextWrapping="Wrap" Width="120" Margin="0,81,22,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="52" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <Button x:Name="buyTicket_Button" Content="Купить" Margin="0,168,0,0" Click="butTicket_Click" FontFamily="Yu Gothic UI Semibold" FontSize="18" HorizontalAlignment="Center" Width="396" Height="47" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
