@@ -138,3 +138,5 @@ D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\buy
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\deleteTicket.g.cs
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\buyTicket.baml
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\deleteTicket.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\printTicket.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\printTicket.baml

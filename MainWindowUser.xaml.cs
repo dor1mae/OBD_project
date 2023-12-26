@@ -125,7 +125,9 @@ namespace OBD
 
         private void printTicket_Click(object sender, RoutedEventArgs e)
         {
-
+            printTicket b = new printTicket();
+            b.Owner = this;
+            b.Show();
         }
     }
 }
