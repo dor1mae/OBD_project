@@ -49,6 +49,12 @@ namespace OBD.WorkPages.WorkerPages
 
             Table.ItemsSource = items;
         }
+
+        private void printTickets_Click(object sender, RoutedEventArgs e)
+        {
+            PrintWorker p = new PrintWorker();
+            p.Show();
+        }
     }
 
     public class SimpWorker

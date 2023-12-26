@@ -49,10 +49,9 @@ namespace OBD.WorkPages.TicketPages
             (c, id_Ex) = t.testVal(this.cost.Text, this.idEx.Text);
             DateTime day = t.StringToDateTime(this.day.Text);
 
-            if (db.Organizators.Find(id_Ex) == null)
+            if (db.Exhibitions.Find(id_Ex) == null)
             {
                 MessageBox.Show("Такой выставки нет");
-                return;
             }
 
             if (t.f)

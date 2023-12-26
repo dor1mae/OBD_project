@@ -21,7 +21,7 @@ namespace OBD.WorkPages.TicketPages
     public partial class TicketGet : Page
     {
         OdbContext db = new OdbContext();
-
+        List<SimpTicket> items;
 
         public TicketGet()
         {
@@ -34,7 +34,7 @@ namespace OBD.WorkPages.TicketPages
         {
             var d = db.Tickets.ToList();
 
-            List<SimpTicket> items = new List<SimpTicket>(d.Count);
+            this.items = new List<SimpTicket>(d.Count);
 
             foreach (Ticket d2 in d)
             {
@@ -46,6 +46,12 @@ namespace OBD.WorkPages.TicketPages
             }
 
             Table.ItemsSource = items;
+        }
+
+        private void printTickets_Click(object sender, RoutedEventArgs e)
+        {
+            printTickets t = new printTickets();
+            t.Show();
         }
     }
 

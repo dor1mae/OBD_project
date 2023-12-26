@@ -138,3 +138,11 @@ D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\buy
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\deleteTicket.g.cs
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\buyTicket.baml
 D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\deleteTicket.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\printTicket.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\UserPages\printTicket.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\TicketPages\printTickets.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\TicketPages\printTickets.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\DirectoryPages\PrintDirectory.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\DirectoryPages\PrintDirectory.baml
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\WorkerPages\PrintWorker.g.cs
+D:\Projects\Created\OBD_project\obj\Debug\net7.0-windows\WorkPages\WorkerPages\PrintWorker.baml

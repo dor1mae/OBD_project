@@ -28,6 +28,9 @@
     <Compile Update="WorkPages\DirectoryPages\DirUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\DirectoryPages\PrintDirectory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\ExhibitionPages\ExhibitionCreate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -103,6 +106,9 @@
     <Compile Update="WorkPages\SettlerPages\SettlerUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\TicketPages\printTickets.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\TicketPages\TicketCreate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -124,7 +130,13 @@
     <Compile Update="WorkPages\UserPages\deleteTicket.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkPages\UserPages\printTicket.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkPages\UserPages\WatchProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkPages\WorkerPages\PrintWorker.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WorkPages\WorkerPages\WorkerCreate.xaml.cs">
@@ -169,6 +181,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\DirectoryPages\DirUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\DirectoryPages\PrintDirectory.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\ExhibitionPages\ExhibitionCreate.xaml">
@@ -246,6 +261,9 @@
     <Page Update="WorkPages\SettlerPages\SettlerUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="WorkPages\TicketPages\printTickets.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="WorkPages\TicketPages\TicketCreate.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -267,7 +285,13 @@
     <Page Update="WorkPages\UserPages\deleteTicket.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="WorkPages\UserPages\printTicket.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="WorkPages\UserPages\WatchProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkPages\WorkerPages\PrintWorker.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkPages\WorkerPages\WorkerCreate.xaml">
