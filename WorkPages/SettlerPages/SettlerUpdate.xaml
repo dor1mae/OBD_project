@@ -33,17 +33,6 @@
         </TextBox>
         <Label Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Height="28" Margin="60,316,0,0" HorizontalContentAlignment="Left" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
         <TextBox x:Name="email" HorizontalAlignment="Left" Margin="385,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="26" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
-        <Label Content="Id билета" HorizontalAlignment="Left" Margin="60,349,0,0" VerticalAlignment="Top" Width="206" Height="32" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
-        <TextBox x:Name="idTicket" HorizontalAlignment="Left" Margin="387,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="25" FontFamily="Yu Gothic UI Semibold" FontSize="16" RenderTransformOrigin="0.5,0.5">
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="2.496"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-0.568"/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
         <Label Content="* Дата записывается в формате &quot;{Год}:{Месяц}:{День}&quot;" HorizontalAlignment="Center" Margin="0,292,0,0" VerticalAlignment="Top" Width="530" FontFamily="Yu Gothic UI Semilight" FontSize="10" Height="25"/>
         <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="386,404,0,0" VerticalAlignment="Top" Width="204" Height="36" Click="Save_Click"/>
 

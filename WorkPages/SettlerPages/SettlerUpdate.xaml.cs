@@ -49,11 +49,6 @@ namespace OBD.WorkPages.SettlerPages
                     dateBirth.Text = t.DateTimeToString(temp.Birth);
                     email.Text = temp.Email;
                     phone.Text = temp.Phone;
-
-                    if (temp.IdTicket != null)
-                    {
-                        idTicket.Text = Convert.ToString(temp.IdTicket);
-                    }
                 }
                 else
                 {
@@ -68,51 +63,6 @@ namespace OBD.WorkPages.SettlerPages
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if (idTicket.Text == "")
-            {
-                Save_WithoutId();
-            }
-            else
-            {
-                Save_WithId();
-            }
-        }
-
-        public void Save_WithId()
-        {
-            int id_ticket;
-
-            id_ticket = t.idTest(idTicket.Text);
-            DateTime birth = t.StringToDateTime(this.dateBirth.Text);
-
-            if (db.Tickets.Find(id_ticket) == null)
-            {
-                MessageBox.Show("Такого билета нет");
-                return;
-            }
-
-            if (t.f)
-            {
-                temp.FirstName = firstName.Text;
-                temp.SecondName = secondName.Text;
-                temp.FatherName = fatherName.Text;
-                temp.Birth = birth;
-                temp.Phone = phone.Text;
-                temp.Email = email.Text;
-                temp.IdTicket = id_ticket;
-
-                db.SaveChanges();
-
-                MessageBox.Show("Успешно изменено!");
-            }
-            else
-            {
-                MessageBox.Show("Ошибка в данных");
-            }
-        }
-
-        public void Save_WithoutId()
-        {
             try
             {
                 DateTime birth = t.StringToDateTime(this.dateBirth.Text);
@@ -125,7 +75,6 @@ namespace OBD.WorkPages.SettlerPages
                     temp.Birth = birth;
                     temp.Phone = phone.Text;
                     temp.Email = email.Text;
-                    temp.IdTicket = null;
 
                     db.SaveChanges();
 

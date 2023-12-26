@@ -1,0 +1,16 @@
+﻿<Window x:Class="OBD.WorkPages.DirectoryPages.PrintDirectory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OBD.WorkPages.DirectoryPages"
+        mc:Ignorable="d"
+        Title="PrintDirectory" Height="500" Width="600" MinWidth="600" MaxWidth="600" MinHeight="500" MaxHeight="500">
+    <Grid x:Name="grid">
+        <Canvas x:Name="canvas" Margin="14,10,14,69">
+            <DataGrid x:Name="table" Height="405" Width="572" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontSize="8"/>
+        </Canvas>
+        <Button x:Name="Print" Content="Печать" HorizontalAlignment="Left" Margin="433,420,0,0" VerticalAlignment="Top" Height="38" Width="153" FontFamily="Yu Gothic UI Semibold" FontSize="20" Background="#FFA5E8AE" Click="Print_Click"/>
+
+    </Grid>
+</Window>

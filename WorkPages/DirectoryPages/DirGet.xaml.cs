@@ -51,6 +51,12 @@ namespace OBD.WorkPages.DirectoryPages
 
             Table.ItemsSource = items;
         }
+
+        private void printDirectory_Click(object sender, RoutedEventArgs e)
+        {
+            PrintDirectory p = new PrintDirectory();
+            p.Show();
+        }
     }
 
     public class SimpDir

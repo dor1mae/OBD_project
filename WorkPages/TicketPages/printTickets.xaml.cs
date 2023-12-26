@@ -12,56 +12,55 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace OBD.WorkPages.UserPages
+namespace OBD.WorkPages.TicketPages
 {
     /// <summary>
-    /// Логика взаимодействия для printTicket.xaml
+    /// Логика взаимодействия для printTickets.xaml
     /// </summary>
-    public partial class printTicket : Window
+    public partial class printTickets : Window
     {
         private bool flag = false;
         OdbContext db = new OdbContext();
+        List<PrintTicket> items;
 
-        public printTicket()
+        public printTickets()
         {
             InitializeComponent();
+            Create_Table();
         }
 
-        private void Search_Click(object sender, RoutedEventArgs e)
+        private void Create_Table()
         {
-            try
+            var d = db.Tickets.ToList();
+
+            this.items = new List<PrintTicket>(d.Count);
+            int AllMoney = 0;
+            int AllTickets = 0;
+
+
+            foreach (Ticket d2 in d)
             {
-                int id = Convert.ToInt32(idTicket.Text);
+                items.Add(new PrintTicket(
+                    d2.Id,
+                    d2.Cost,
+                    d2.Day,
+                    d2.IdExhibition,
+                    db.Exhibitions.Find(d2.IdExhibition).Title));
 
-                Ticket ticket = db.Tickets.Find(id);
-                if(ticket != null)
-                {
-                    this.idTick.Content = id;
-                    this.nameExh.Content = db.Exhibitions.Find(ticket.IdExhibition).Title;
-                    this.fioSettler.Content = $"{db.Settlers.Find(ticket.IdSettler).SecondName} {db.Settlers.Find(ticket.IdSettler).FirstName} {db.Settlers.Find(ticket.IdSettler).FatherName}";
-                    this.costTicket.Content = ticket.Cost;
-                    this.dayExh.Content = ticket.Day;
-
-                    this.flag = true;
-                    return;
-                }
-                else
-                {
-                    MessageBox.Show("Такого билета нет");
-                    return;
-                }
-
+                AllTickets++;
+                AllMoney += d2.Cost;
             }
-            catch
-            {
-                MessageBox.Show("Ошибка в формате данных");
-                return;
-            } 
+
+            table.ItemsSource = items;
+
+            table.ItemsSource = items;
+            end.Content = $"Всего продано {AllTickets} билетов на сумму {AllMoney}";
+            flag = true;
         }
 
         private void Print_Click(object sender, RoutedEventArgs e)
         {
-            if(flag == true)
+            if (flag == true)
             {
                 PrintDialog printDialog = new PrintDialog();
                 if (printDialog.ShowDialog() == true)
@@ -70,7 +69,7 @@ namespace OBD.WorkPages.UserPages
                     grid.Visibility = Visibility.Hidden;
 
                     // Увеличить размер в 5 раз
-                    canvas.LayoutTransform = new ScaleTransform(1, 1);
+                    canvas.LayoutTransform = new ScaleTransform(1.3, 2.2);
 
                     // Определить поля
                     int pageMargin = 5;
@@ -84,7 +83,7 @@ namespace OBD.WorkPages.UserPages
                     canvas.Arrange(new Rect(pageMargin, pageMargin, pageSize.Width, pageSize.Height));
 
                     // Напечатать элемент
-                    printDialog.PrintVisual(canvas, "Печать билета");
+                    printDialog.PrintVisual(canvas, "Отчет по продажам билетов");
 
                     // Удалить трансформацию и снова сделать элемент видимым
                     canvas.LayoutTransform = null;
@@ -96,6 +95,28 @@ namespace OBD.WorkPages.UserPages
                 MessageBox.Show("Нечего печатать");
                 return;
             }
+        }
+    }
+
+    public class PrintTicket
+    {
+        public int Id { get; set; }
+
+        public int Cost { get; set; }
+
+        public DateTime Day { get; set; }
+
+        public int? IdExhibition { get; set; }
+
+        public string ExTitle { get; set; }
+
+        public PrintTicket(int id, int c, DateTime d, int? i, string ex)
+        {
+            this.Id = id;
+            this.Cost = c;
+            this.Day = d;
+            this.IdExhibition = i;
+            this.ExTitle = ex;
         }
     }
 }

@@ -314,7 +314,7 @@ public partial class OdbContext : DbContext
 
             entity.ToTable("tickets");
 
-            entity.HasIndex(e => e.IdExhibition, "tickets_id_exhibition_key").IsUnique();
+            entity.HasIndex(e => e.IdExhibition, "tickets_id_exhibition_key");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Cost).HasColumnName("cost");

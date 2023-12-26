@@ -6,20 +6,20 @@
         xmlns:local="clr-namespace:OBD.WorkPages.UserPages"
         mc:Ignorable="d"
         Title="printTicket" Height="430" Width="350" MinWidth="350" MaxWidth="350" MinHeight="450" MaxHeight="450">
-    <Grid x:Name="grid" Background="#FF4554B8" HorizontalAlignment="Center" VerticalAlignment="Center" Height="446">
+    <Grid x:Name="grid" Background="#FFA5E8AE" HorizontalAlignment="Center" VerticalAlignment="Center" Height="446">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="161*"/>
             <ColumnDefinition Width="159*"/>
         </Grid.ColumnDefinitions>
-        <Canvas x:Name="canvas" Margin="0,128,0,46" Background="#FF19225E" HorizontalAlignment="Left" Width="349" Grid.ColumnSpan="2">
-            <Label x:Name="idTick" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="79" Content="id билета" FontFamily="Yu Gothic UI Semibold" FontSize="14" Foreground="White"/>
-            <Label x:Name="nameExh" Canvas.Left="66" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center" Width="216" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Название выставки" FontFamily="Yu Gothic UI Semibold" FontSize="18" Foreground="White"/>
-            <Label x:Name="fioSettler" Canvas.Left="11" Canvas.Top="76" HorizontalAlignment="Left" VerticalAlignment="Top" Width="298" Content="ФИО Владельца" FontFamily="Yu Gothic UI Semibold" FontSize="14" Foreground="White"/>
-            <Label x:Name="dayExh" Canvas.Left="11" Canvas.Top="108" HorizontalAlignment="Left" VerticalAlignment="Center" Width="298" Content="День назначения" FontFamily="Yu Gothic UI Semibold" FontSize="14" Foreground="White"/>
-            <Label x:Name="costTicket" Canvas.Left="234" Canvas.Top="220" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="Цена билета" FontFamily="Yu Gothic UI Semibold" FontSize="14" Foreground="White"/>
+        <Canvas x:Name="canvas" Margin="0,128,0,46" Background="#FFD8EDDA" HorizontalAlignment="Left" Width="349" Grid.ColumnSpan="2">
+            <Label x:Name="idTick" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="79" Content="id билета" FontFamily="Yu Gothic UI Semibold" FontSize="14" Foreground="#FF020101"/>
+            <Label x:Name="nameExh" Canvas.Left="66" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center" Width="216" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Название выставки" FontFamily="Yu Gothic UI Semibold" FontSize="18" Foreground="#FF020101"/>
+            <Label x:Name="fioSettler" Canvas.Left="11" Canvas.Top="76" HorizontalAlignment="Left" VerticalAlignment="Top" Width="298" Content="ФИО Владельца" FontFamily="Yu Gothic UI Semibold" FontSize="14" Foreground="#FF020101"/>
+            <Label x:Name="dayExh" Canvas.Left="11" Canvas.Top="108" HorizontalAlignment="Left" VerticalAlignment="Center" Width="298" Content="День назначения" FontFamily="Yu Gothic UI Semibold" FontSize="14" Foreground="#FF020101"/>
+            <Label x:Name="costTicket" Canvas.Left="234" Canvas.Top="220" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="Цена билета" FontFamily="Yu Gothic UI Semibold" FontSize="14" Foreground="#FF020101"/>
         </Canvas>
-        <Label Content="Печать билета" Margin="103,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="39"/>
-        <Label Content="Id билета" HorizontalAlignment="Left" Margin="25,54,0,0" VerticalAlignment="Top" Width="93" Foreground="White"/>
+        <Label Content="Печать билета" Margin="103,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="Black" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="39"/>
+        <Label Content="Id билета" HorizontalAlignment="Left" Margin="25,54,0,0" VerticalAlignment="Top" Width="93" Foreground="Black"/>
         <TextBox x:Name="idTicket" TextWrapping="Wrap" Width="120" Margin="30,54,0,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26"/>
         <Button x:Name="Search" Margin="25,92,0,0" Content="Найти билет" Click="Search_Click" Height="31" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="300"/>
         <Button x:Name="Print" Margin="20,400,0,0" Content="Напечатать билет" Click="Print_Click" HorizontalAlignment="Left" Width="310" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="31"/>

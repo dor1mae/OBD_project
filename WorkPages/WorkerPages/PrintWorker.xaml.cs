@@ -12,56 +12,54 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace OBD.WorkPages.UserPages
+namespace OBD.WorkPages.WorkerPages
 {
     /// <summary>
-    /// Логика взаимодействия для printTicket.xaml
+    /// Логика взаимодействия для PrintWorker.xaml
     /// </summary>
-    public partial class printTicket : Window
+    public partial class PrintWorker : Window
     {
         private bool flag = false;
         OdbContext db = new OdbContext();
+        List<SimpWorker> items;
 
-        public printTicket()
+        public PrintWorker()
         {
             InitializeComponent();
+            Create_Table();
         }
 
-        private void Search_Click(object sender, RoutedEventArgs e)
+        private void Create_Table()
         {
-            try
+            var d = db.Employees.ToList();
+
+            this.items = new List<SimpWorker>(d.Count);
+            int AllMoney = 0;
+
+
+            foreach (Employee d2 in d)
             {
-                int id = Convert.ToInt32(idTicket.Text);
+                items.Add(new SimpWorker(
+                    d2.Id,
+                    d2.FirstName,
+                    d2.SecondName,
+                    d2.FatherName,
+                    d2.Salary,
+                    d2.IdProf));
 
-                Ticket ticket = db.Tickets.Find(id);
-                if(ticket != null)
-                {
-                    this.idTick.Content = id;
-                    this.nameExh.Content = db.Exhibitions.Find(ticket.IdExhibition).Title;
-                    this.fioSettler.Content = $"{db.Settlers.Find(ticket.IdSettler).SecondName} {db.Settlers.Find(ticket.IdSettler).FirstName} {db.Settlers.Find(ticket.IdSettler).FatherName}";
-                    this.costTicket.Content = ticket.Cost;
-                    this.dayExh.Content = ticket.Day;
-
-                    this.flag = true;
-                    return;
-                }
-                else
-                {
-                    MessageBox.Show("Такого билета нет");
-                    return;
-                }
-
+                AllMoney += d2.Salary;
             }
-            catch
-            {
-                MessageBox.Show("Ошибка в формате данных");
-                return;
-            } 
+
+            table.ItemsSource = items;
+
+            table.ItemsSource = items;
+            end.Content = $"Общая сумма выплат работникам: {AllMoney}";
+            flag = true;
         }
 
         private void Print_Click(object sender, RoutedEventArgs e)
         {
-            if(flag == true)
+            if (flag == true)
             {
                 PrintDialog printDialog = new PrintDialog();
                 if (printDialog.ShowDialog() == true)
@@ -70,7 +68,7 @@ namespace OBD.WorkPages.UserPages
                     grid.Visibility = Visibility.Hidden;
 
                     // Увеличить размер в 5 раз
-                    canvas.LayoutTransform = new ScaleTransform(1, 1);
+                    canvas.LayoutTransform = new ScaleTransform(1.3, 2.2);
 
                     // Определить поля
                     int pageMargin = 5;
@@ -84,7 +82,7 @@ namespace OBD.WorkPages.UserPages
                     canvas.Arrange(new Rect(pageMargin, pageMargin, pageSize.Width, pageSize.Height));
 
                     // Напечатать элемент
-                    printDialog.PrintVisual(canvas, "Печать билета");
+                    printDialog.PrintVisual(canvas, "Отчет по продажам билетов");
 
                     // Удалить трансформацию и снова сделать элемент видимым
                     canvas.LayoutTransform = null;

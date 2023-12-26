@@ -9,7 +9,8 @@
 
     <Grid Background="White">
         <Label Content="Просмотр билетов" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="304" Height="65" RenderTransformOrigin="0.672,0.534" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
-        <DataGrid x:Name="Table" d:ItemsSource="{d:SampleData ItemCount=2}" FontFamily="Yu Gothic UI Semibold" Margin="10,75,10,10" IsReadOnly="True"/>
+        <DataGrid x:Name="Table" d:ItemsSource="{d:SampleData ItemCount=2}" FontFamily="Yu Gothic UI Semibold" Margin="10,75,10,49" IsReadOnly="True"/>
+        <Button x:Name="printTickets" HorizontalAlignment="Left" Margin="500,406,0,0" VerticalAlignment="Top" Height="34" Width="140" Background="#FFA5E8AE" Content="Подготовить отчет" FontFamily="Yu Gothic UI Semibold" Click="printTickets_Click"/>
 
     </Grid>
 </Page>
